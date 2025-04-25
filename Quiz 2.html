@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Conducenti</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simulazione Quiz</h1>
+    <div id="quiz-box">
+      <p id="question"></p>
+      <div class="options">
+        <button onclick="seleziona('A')" id="btnA"></button>
+        <button onclick="seleziona('B')" id="btnB"></button>
+        <button onclick="seleziona('C')" id="btnC"></button>
+      </div>
+    </div>
+    <div id="fine-quiz" style="display:none;">
+      <h2>Quiz terminato!</h2>
+      <p id="risultato"></p>
+      <button onclick="location.reload()">Ricomincia</button>
+    </div>
+  </div>
+  <script src="quiz.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
